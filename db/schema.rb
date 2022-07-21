@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_21_000233) do
+ActiveRecord::Schema.define(version: 2022_07_21_002600) do
 
   create_table "comics", force: :cascade do |t|
     t.string "title"
@@ -18,6 +18,11 @@ ActiveRecord::Schema.define(version: 2022_07_21_000233) do
     t.integer "serialization_end_year"
     t.string "publisher"
     t.string "genre"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "games", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
