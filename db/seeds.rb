@@ -37,7 +37,6 @@ when "2"
     { title: '銀魂 ぎんたま', genre: 'SF 時代劇 ギャグ漫画 バトル漫画', serialization_started_year: 2004, serialization_end_year: 2018, publisher: '週刊少年ジャンプ' },
     { title: 'クレヨンしんちゃん', genre: 'ギャグ漫画 青年漫画', serialization_started_year: 1990, serialization_end_year: 2010, publisher: '漫画アクション' }
   ]
-end
 
 when "3"
   comics = [
@@ -48,6 +47,7 @@ when "3"
     { content: '連載は週刊少年ジャンプ？', algorithm: 'publisher_match', eval_value: '週刊少年ジャンプ' }, 
     { content: '海賊が関係してますか？', algorithm: 'genre_match', eval_value: '海賊' }
   ]
+end
 
 if comics.present?
   comics.each do |comic|
