@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 
   # get 'games/new'
   root 'games#new'
-  resources :games, only: %i[new create]
+  resources :games, only: %i[new create] do
+    resource :progresses, only: %i[new create]
+  end
 end
